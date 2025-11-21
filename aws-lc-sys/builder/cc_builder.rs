@@ -520,7 +520,7 @@ impl CcBuilder {
         for flag in lib.flags {
             cc_build.flag(flag);
         }
-        self.run_compiler_checks(&mut cc_build);
+        // self.run_compiler_checks(&mut cc_build);
 
         self.add_all_files(lib, &mut cc_build);
         if let Some(prefix) = &self.build_prefix {
